@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@
             color: var(--primary);
             border-bottom: 2px solid black;
             padding: 1.5rem 5%;
-            text-align: center;
+            text-align: left;
         }
 
         .header-inner {
@@ -36,7 +36,7 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1rem;
         }
 
@@ -45,11 +45,25 @@
             width: auto;
         }
 
-        header h1 {
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text h1 {
             margin: 0;
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        .header-text h2 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--primary);
         }
 
         .hero {
@@ -316,7 +330,10 @@
     <header>
         <div class="header-inner">
             <img src="xylogocropped.png" alt="XY Investments LLC Logo" class="logo">
-            <h1>XY Investments LLC</h1>
+            <div class="header-text">
+                <h1>XY INVESTMENTS</h1>
+                <h2>LLC</h2>
+            </div>
         </div>
     </header>
 
